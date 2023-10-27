@@ -56,7 +56,7 @@ local function process_sections(sections)
   for name, section in pairs(sections) do
     local left = name:sub(9, 10) < 'x'
     for pos = 1, name ~= 'lualine_z' and #section or #section - 1 do
-      table.insert(section, pos * 2, { empty, color = { fg = colors.white, bg = colors.white } })
+      table.insert(section, pos * 2, { empty, color = { fg = colors.black, bg = colors.lightgray } })
     end
     for id, comp in ipairs(section) do
       if type(comp) ~= 'table' then
@@ -94,8 +94,18 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {
                         'branch',
-                        'diff',
-                        { 'filename', color = { fg=colors.white, bg=colors.lightgray } },
+                        {
+                            'diff',
+                            diff_color = {
+                                added = { fg = colors.black },
+                                modified = { fg = colors.black },
+                                removed = { fg = colors.black },
+                            },
+                        },
+                        {
+                            'filename',
+                            color = { fg=colors.white, bg=colors.lightgray }
+                        },
                     },
         lualine_c = {
                         {
@@ -117,7 +127,7 @@ require('lualine').setup {
                             diagnostics_color = { hint = { bg = colors.hint, fg = colors.white } },
                         }
                     },
-        lualine_x = {'encoding', 'fileformat', 'filetype'},
+        lualine_x = {'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
     },
