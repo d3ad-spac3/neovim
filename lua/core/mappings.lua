@@ -44,3 +44,5 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<C-c>", '"+y')
 vim.keymap.set("n", "<C-v>", '"+p')
 vim.keymap.set("i", "<C-v>", '<esc>"+pa')
+
+vim.keymap.set("n", "gp", ":DogeGenerate numpy<CR>")

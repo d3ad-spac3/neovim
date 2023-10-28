@@ -30,3 +30,5 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
 	dapui.close()
 end
+
+vim.cmd([[call doge#install()]])

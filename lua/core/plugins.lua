@@ -148,6 +148,7 @@ require("lazy").setup({
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+	{ "kkoomen/vim-doge" },
 }, {
 	ui = { border = "rounded" },
 })
