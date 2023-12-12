@@ -11,6 +11,7 @@ require("plugins.gitsigns")
 require("plugins.null_ls")
 require("plugins.illuminate")
 require("plugins.bufferline")
+require("plugins.whichkey")
 
 require("core.mappings")
 
@@ -32,3 +33,20 @@ dap.listeners.before.event_exited["dapui_config"] = function()
 end
 
 vim.cmd([[call doge#install()]])
+
+if vim.g.neovide then
+	vim.o.guifont = "FiraCode NerdFont:h13"
+	vim.g.neovide_hide_mouse_when_typing = true
+	vim.g.neovide_refresh_rate = 100
+	vim.g.neovide_refresh_rate_idle = 100
+	vim.g.neovide_no_idle = true
+	vim.g.neovide_confirm_quit = false
+	vim.g.neovide_fullscreen = false
+	vim.g.neovide_remember_window_size = false
+	vim.g.neovide_profiler = false
+	vim.g.neovide_cursor_animation_length = 0.11
+	vim.g.neovide_cursor_trail_size = 0.7
+	vim.g.neovide_cursor_antialiasing = true
+	vim.g.neovide_cursor_animate_in_insert_mode = true
+	vim.g.neovide_cursor_animate_command_line = true
+end

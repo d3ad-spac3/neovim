@@ -21,6 +21,8 @@ class Human:
 
     def show_info(self) -> None:
         print(f"Human, Name: {self.name}, Age: {self.age}")
+        # TODO: some cool
+        # FIX: fix this shit!
 
 
 tom = Human(name="Tom", age=23)

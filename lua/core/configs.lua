@@ -9,7 +9,6 @@ local options = {
 	expandtab = true, -- convert tabs to spaces
 	fileencoding = "utf-8", -- the encoding written to a file
 	foldexpr = "nvim_treesitter#foldexpr()",
-	guifont = "monospace:h17", -- the font used in graphical neovim applications
 	hlsearch = true, -- highlight all matches on previous search pattern
 	ignorecase = true, -- ignore case in search patterns
 	mouse = "a", -- allow the mouse to be used in neovim

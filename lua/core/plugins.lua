@@ -149,6 +149,12 @@ require("lazy").setup({
 		},
 	},
 	{ "kkoomen/vim-doge" },
+	{ "folke/which-key.nvim" },
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {},
+	},
 }, {
 	ui = { border = "rounded" },
 })
