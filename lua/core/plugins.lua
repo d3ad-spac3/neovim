@@ -13,6 +13,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	{
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
 	{ "nvim-lua/plenary.nvim" },
 	{
 		"nvim-telescope/telescope.nvim",
@@ -138,16 +147,16 @@ require("lazy").setup({
 			require("dapui").setup()
 		end,
 	},
-	{
-		"nvimdev/lspsaga.nvim",
-		config = function()
-			require("lspsaga").setup({})
-		end,
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons",
-		},
-	},
+	-- {
+	-- 	"nvimdev/lspsaga.nvim",
+	-- 	config = function()
+	-- 		require("lspsaga").setup({})
+	-- 	end,
+	-- 	dependencies = {
+	-- 		"nvim-treesitter/nvim-treesitter",
+	-- 		"nvim-tree/nvim-web-devicons",
+	-- 	},
+	-- },
 	{ "kkoomen/vim-doge" },
 	{ "folke/which-key.nvim" },
 	{
@@ -155,6 +164,7 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {},
 	},
+	{ "sainnhe/gruvbox-material" },
 }, {
 	ui = { border = "rounded" },
 })

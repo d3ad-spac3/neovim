@@ -1,4 +1,6 @@
 class Human:
+    """Basic class for humans."""
+
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
@@ -20,10 +22,20 @@ class Human:
         self.age = new_age
 
     def show_info(self) -> None:
+        """
+        Human.show_info
+
+        The method to print out information about Human to console.
+
+        Returns
+        -------
+        None
+        """
+
         print(f"Human, Name: {self.name}, Age: {self.age}")
         # TODO: some cool
-        # FIX: fix this shit!
+        # FIX: fix this shit! wa asd
 
 
-tom = Human(name="Tom", age=23)
-tom.show_info()
+another_human = Human(name="Tom", age=23)
+another_human.show_info()

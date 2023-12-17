@@ -30,13 +30,18 @@ wk.register({
 	gd = { "LSP go to definition" },
 	gD = { "LSP go to declaration" },
 	gr = { "LSP buffer references" },
+	ld = { "Diagnostic open float" },
 	l = {
 		name = "LSP",
-		d = "Float diagnostic",
-		D = "Hover diagnostic",
-		f = "Format",
+		h = "Hover",
 		r = "Rename",
 		a = "Code action",
-		s = "Symbol",
+
+		w = {
+			name = "Workspace",
+			a = "Add workspace folder",
+			r = "Remove workspace folder",
+			l = "List workspace folders",
+		},
 	},
 }, { prefix = "<leader>" })
