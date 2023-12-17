@@ -16,8 +16,8 @@ require("plugins.whichkey")
 require("core.mappings")
 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme("tokyonight-night")
--- vim.cmd.colorscheme("horizon")
+-- vim.cmd.colorscheme("tokyonight-night")
+vim.cmd.colorscheme("horizon")
 -- vim.cmd.colorscheme("aura")
 -- vim.cmd.colorscheme("nord")
 
