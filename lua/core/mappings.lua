@@ -50,3 +50,6 @@ vim.keymap.set("n", "<C-A-k>", "<C-w>+")
 vim.keymap.set("n", "<C-A-j>", "<C-w>-")
 vim.keymap.set("n", "<C-A-h>", "<C-w><")
 vim.keymap.set("n", "<C-A-l>", "<C-w>>")
+
+vim.keymap.set("n", "<leader>tl", ":TodoTelescope<CR>")
+vim.keymap.set("n", "<leader>tq", ":TodoQuickFix<CR>")

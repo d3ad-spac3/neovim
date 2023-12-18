@@ -44,4 +44,10 @@ wk.register({
 			l = "List workspace folders",
 		},
 	},
+
+	t = {
+		name = "TodoComments",
+		l = "TodoTelescope",
+		q = "TodoQuickFix",
+	},
 }, { prefix = "<leader>" })
