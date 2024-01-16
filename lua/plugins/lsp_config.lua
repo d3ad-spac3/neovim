@@ -21,7 +21,8 @@ local handlers = {
 -- Setup language servers.
 local lspconfig = require("lspconfig")
 
-lspconfig.pyright.setup({ handlers = handlers })
+-- lspconfig.pyright.setup({ handlers = handlers })
+lspconfig.jedi_language_server.setup({ handlers = handlers })
 lspconfig.cssls.setup({ handlers = handlers })
 lspconfig.html.setup({ handlers = handlers })
 lspconfig.lua_ls.setup({ handlers = handlers })
