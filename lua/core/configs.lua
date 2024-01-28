@@ -1,5 +1,7 @@
 -- [[ Setting options ]]
 local options = {
+	foldenable = true,
+	foldmethod = "manual",
 	backup = false, -- creates a backup file
 	breakindent = true, -- indent line wraps
 	clipboard = "unnamedplus", -- allows neovim to access the system clipboard
@@ -8,7 +10,7 @@ local options = {
 	conceallevel = 0, -- so that `` is visible in markdown files
 	expandtab = true, -- convert tabs to spaces
 	fileencoding = "utf-8", -- the encoding written to a file
-	foldexpr = "nvim_treesitter#foldexpr()",
+	-- foldexpr = "nvim_treesitter#foldexpr()",
 	hlsearch = true, -- highlight all matches on previous search pattern
 	ignorecase = true, -- ignore case in search patterns
 	mouse = "a", -- allow the mouse to be used in neovim

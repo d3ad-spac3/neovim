@@ -165,6 +165,7 @@ require("lazy").setup({
 		opts = {},
 	},
 	{ "sainnhe/gruvbox-material" },
+	{ "tmhedberg/SimpylFold" },
 }, {
 	ui = { border = "rounded" },
 })
