@@ -23,9 +23,13 @@ local lspconfig = require("lspconfig")
 
 lspconfig.pyright.setup({ handlers = handlers })
 -- lspconfig.jedi_language_server.setup({ handlers = handlers })
+lspconfig.gopls.setup({ handlers = handlers })
 lspconfig.cssls.setup({ handlers = handlers })
 lspconfig.html.setup({ handlers = handlers })
+lspconfig.sqlls.setup({ handlers = handlers })
 lspconfig.lua_ls.setup({ handlers = handlers })
+lspconfig.dockerls.setup({ handlers = handlers })
+lspconfig.yamlls.setup({ handlers = handlers })
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
